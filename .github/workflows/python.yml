@@ -1,3 +1,4 @@
+---
 name: test python
 on: [push, pull_request]
 jobs:
@@ -8,7 +9,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -23,6 +23,12 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run tests
-        run: 
+        run: source $VENV/bin/activate
+             pytest
+
+      - name: lint with pylint
+        if: success()
+        run: |
           source $VENV/bin/activate
-          pytest
+          pip install pylint
+          pylint **/*.py
