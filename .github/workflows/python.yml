@@ -88,5 +88,4 @@ jobs:
       - name: Run pylint
         run: |
           source $VENV/bin/activate
-          pylint --ignore=greeting/admin.py,greeting/apps.py,greeting/models.py,
-          greeting/tests.py,greeting/urls.py,greeting/views.py,manage.py $(git ls-files '*.py')
+          pylint $(git ls-files '*.py')
