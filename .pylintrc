@@ -20,8 +20,8 @@ disable=
     too-many-arguments,
     too-many-instance-attributes,
     too-many-locals,
-    too-many-branches
-    trailing-whitespace
+    too-many-branches,
+    trailing-whitespace,
     unused-import
 
 [FORMAT]
