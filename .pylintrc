@@ -21,6 +21,8 @@ disable=
     too-many-instance-attributes,
     too-many-locals,
     too-many-branches
+    trailing-whitespace
+    unused-import
 
 [FORMAT]
 max-line-length=100
