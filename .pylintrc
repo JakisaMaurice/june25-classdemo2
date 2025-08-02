@@ -22,7 +22,8 @@ disable=
     too-many-locals,
     too-many-branches,
     trailing-whitespace,
-    unused-import
+    unused-import,
+    missing-final-newline
 
 [FORMAT]
 max-line-length=100
